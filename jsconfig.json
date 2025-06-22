@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src", // This sets the base directory for resolving non-relative module names
+    "paths": {
+      "@/*": ["*"] // This maps any import starting with "@/" to look inside the "src" directory
+    },
+    "jsx": "react-jsx", // Specify JSX factory for React 17+
+    "target": "es2015" // Specify ECMAScript target version
+  },
+  "include": ["src"] // Tell the compiler to include files in the src directory
+}
