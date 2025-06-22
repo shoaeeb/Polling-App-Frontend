@@ -48,7 +48,7 @@ function App() {
     cancelButtonText: "Cancel",
   });
 
-  const backendUrl = "http://localhost:5000"; // Hardcoded for Canvas environment
+  const backendUrl = import.meta.env.VITE_BASE_URL || "http://localhost:5000"; // Hardcoded for Canvas environment
   const googleClientId =
     "847555880822-p8g77l3c2q4n88mmjjnfdf73pi7qssq2.apps.googleusercontent.com"; // Your specific Client ID
 
